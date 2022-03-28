@@ -1,8 +1,19 @@
+.innerContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.innerContainer .control-panel {
+    width: 100%;
+}
+
 .toolbar {
     display: flex;
     justify-content: right;
     align-items: flex-end;
 }
+
 .toolbar h3{
     margin: 0 0.25rem;
+    font-size: 1em;
 }

@@ -1,0 +1,16 @@
+.drum-pad {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    background-color: var(--colour-grey-200);
+    border-radius: .5rem;
+    height: 4.5rem;
+    box-shadow: 2px 2px .3rem black;
+}
+
+.drum-pad label {
+    cursor: inherit;
+    user-select: none;
+}

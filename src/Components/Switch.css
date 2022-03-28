@@ -1,0 +1,24 @@
+.switch {
+    --width: 3.375rem;
+    --height: 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+.switch-control {
+    width: var(--width);
+    height: var(--height);
+
+    cursor: pointer;
+    background-color: black;
+}
+
+.switch-button {
+    margin: 2.5px;
+    width: 23px;
+    height: 18px;
+    background-color: blue;
+}

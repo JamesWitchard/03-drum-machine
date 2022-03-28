@@ -1,4 +1,6 @@
 #keypad {
+    margin: 1.25rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 100px);
+    gap: .65rem;
 }

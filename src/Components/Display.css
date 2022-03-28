@@ -1,0 +1,10 @@
+#display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-block: .75rem;
+    margin-inline: 3rem;
+    height: 2.5rem;
+    background-color: var(--colour-grey-200);
+}
