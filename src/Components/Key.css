@@ -14,3 +14,8 @@
     cursor: inherit;
     user-select: none;
 }
+
+.clicked {
+    background-color: var(--colour-border);
+    box-shadow: none;
+}

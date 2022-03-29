@@ -35,7 +35,7 @@ const Key = (props) => {
 
     return (
         <>
-            <div className="drum-pad" id={props.keyId} onMouseUp={handleClick} onKeyPress={handleKeyPress}>
+            <div className="drum-pad" id={props.keyId} onMouseUp={handleClick} onKeyPress={handleKeyPress}a>
                 <label>{props.keyTrigger}</label>
                 <audio src={props.keyUrl} className="clip" id={props.keyTrigger}
                        ref={clipRef}/>
