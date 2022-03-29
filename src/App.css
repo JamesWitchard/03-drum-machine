@@ -8,7 +8,20 @@
 
 #drum-machine {
     background-color: var(--colour-grey-600);
-    width: 40rem;
+    min-width: 40rem;
     padding: .25rem;
     border: .25rem solid var(--colour-border);
+}
+
+@media screen and (max-width: 675px){
+    .App {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+
+    #drum-machine {
+        min-width: 100vw;
+    }
 }

@@ -39,35 +39,38 @@ const DrumMachine = () => {
 
     return (
         <div className="innerContainer">
-            <Keypad
-                soundBank={currentBank}
-                powerState={powerState}
-                updater={updateDisplay}
-                volume={volume}
-            />
-            <div className="control-panel">
-                <div className="toolbar">
-                    <h3><em>WITCHETTY <i className="fa fa-headphones"/></em></h3>
+            <div className="toolbar">
+                <h3><em>DRUM MACHINE <i className="fa fa-headphones"/></em></h3>
+            </div>
+            <div className="content">
+                <Keypad
+                    soundBank={currentBank}
+                    powerState={powerState}
+                    updater={updateDisplay}
+                    volume={volume}
+                />
+                <div className="control-panel">
+
+                    <Switch
+                        label="Power"
+                        clickEvent={powerClick}
+                        buttonOn={powerState}
+                    />
+                    <Display
+                        text={displayText}
+                    />
+                    <VolumeSlider
+                        value={volume}
+                        powered={powerState}
+                        updater={[updateVolume, updateDisplay]}
+                    />
+                    <Switch
+                        label="Bank"
+                        clickEvent={bankClick}
+                        buttonOn={bankState}
+                        powered={powerState}
+                    />
                 </div>
-                <Switch
-                    label="Power"
-                    clickEvent={powerClick}
-                    buttonOn={powerState}
-                />
-                <Display
-                    text={displayText}
-                />
-                <VolumeSlider
-                    value={volume}
-                    powered={powerState}
-                    updater={[updateVolume, updateDisplay]}
-                />
-                <Switch
-                    label="Bank"
-                    clickEvent={bankClick}
-                    buttonOn={bankState}
-                    powered={powerState}
-                />
             </div>
         </div>
     );

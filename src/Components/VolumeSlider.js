@@ -1,5 +1,7 @@
 import React, {useState} from 'react';
 
+import "./VolumeSlider.css"
+
 const VolumeSlider = (props) => {
     const [value, setValue] = useState(props.value);
 

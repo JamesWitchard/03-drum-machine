@@ -5,6 +5,9 @@
 
     margin-block: .75rem;
     margin-inline: 3rem;
+    min-width: 11.625rem;
     height: 2.5rem;
     background-color: var(--colour-grey-200);
+
+    user-select: none;
 }

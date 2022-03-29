@@ -7,10 +7,10 @@ import "./Keypad.css"
 const Keypad = (props) => {
     const [currentBank, setCurrentBank] = useState(props.soundBank);
 
-
     useEffect(() => {
         setCurrentBank(props.soundBank);
     }, [props.soundBank])
+
     return (
         <div id="keypad">
             {Object.keys(currentBank).map(item => {

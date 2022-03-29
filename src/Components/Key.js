@@ -21,14 +21,15 @@ const Key = (props) => {
 
     function handleClick() {
         if (!props.powerState) return;
+        clipRef.current.parentElement.classList.toggle("clicked");
         props.updater(props.keyId);
         clipRef.current.currentTime = 0;
         clipRef.current.play();
+        setTimeout(() => clipRef.current.parentElement.classList.toggle("clicked"), 100);
     }
 
     function handleKeyPress(e) {
-        console.log(e.key.charCodeAt(0) - 32);
-        if ((e.key.charCodeAt(0) - 32) !== props.keyCode) return;
+        if (e.key.toUpperCase().charCodeAt(0) !== props.keyCode) return;
         handleClick();
     }
 
